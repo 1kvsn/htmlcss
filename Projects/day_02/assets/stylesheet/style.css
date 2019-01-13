@@ -1,13 +1,25 @@
 
 
 h1, h2, p {
-    margin-top: 40px;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    padding-bottom: 40px;
+}
+
+section {
+    text-align: center;
+}
+
+p {
+    margin-bottom: 40px;
 }
 
 /* Ruler */
 hr {
-    border-bottom: 1px, dotted;
+    border: 1px dotted lightgray;
     width: 400px;
     margin: 80px auto;
 }
