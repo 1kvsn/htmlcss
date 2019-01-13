@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head begins here -->
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Day-02 Layout - 1
+        </title>
+        <link rel=stylesheet href="assets/stylesheet/style.css">
+    </head>
+    <!-- body begins here -->
+    <body>
+        <header>
+            <h1>The Box Model, Box-sizing & Box-shadow</h1>
+        <hr>
+        </header>
+        <main>
+            <!-- Exercise One Section -->
+            <section>
+                <h2>Exercise1</h2>
+                <div class="one"></div> <!-- This div made the box. -->
+            <!-- Making of circles and their colors -->
+                <div class="inline">
+                    <div class="circles colorone inline"></div>
+                    <div class="inline namecircle">Content</div>
+                </div>
+                <div class="inline">
+                    <div class="circles colortwo inline"></div>
+                    <div class="inline namecircle">Padding</div>
+                </div>
+                <div class="inline">
+                    <div class="circles colorthree inline"></div>
+                    <div class="inline namecircle">Border</div>
+                </div>
+                <div class="inline">
+                    <div class="circles colorfour inline""></div>
+                    <div class="inline namecircle">Margin</div>
+                </div>
+            <hr>
+            </section>
+            <!-- Exercise two section -->
+            <section>
+                <h2>Exercise2</h2>
+                <p>no border on these boxes.</p>
+                <div class="container boxsizing">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            <hr>
+            </section>
+            <!-- Exercise two second part begins here -->
+            <section>
+                <p>1px border on these boxes.</p>
+                <div class="container">
+                    <div class="box border margin"></div>
+                    <div class="box border margin"></div>
+                    <div class="box border margin"></div>
+                </div>
+            <hr>
+            </section>
+            <section>
+                <p>1px border in these boxes but they are in the same line.</p>
+                <div class="container boxsizing">
+                    <div class="box border"></div>
+                    <div class="box border"></div>
+                    <div class="box border"></div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

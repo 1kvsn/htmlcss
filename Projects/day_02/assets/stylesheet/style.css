@@ -1,7 +1,98 @@
-.mail {
-    background-color: #1EA8AA;
+
+
+h1, h2, p {
+    margin-top: 40px;
+    text-align: center;
 }
 
-h1, nav, div{
-    text-align: center
+/* Ruler */
+hr {
+    border-bottom: 1px, dotted;
+    width: 400px;
+    margin: 80px auto;
 }
+
+/* Exercise one box works */
+.one {
+    width: 200px;
+    height: 200px;
+    background-color: #90EE90;
+    border: 5px solid;
+    box-shadow: inset 0 0 0 20px #87CEFA, 0px 0px 0px 20px #FE4D4D;
+    margin: 0 auto;
+}
+
+/* Creating circles */
+
+.circles {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 20px;
+    /* margin: 0 auto; */
+    vertical-align: -2px;
+}
+
+.inline {
+    display: inline-block;
+    /* margin: 0 auto; Why doesn't this work? */
+}
+
+/* coloring individual circles */
+
+.colorone {
+    background-color: #90EE90;
+}
+
+.colortwo {
+    background-color: #87CEFA
+}
+
+.colorthree {
+    background-color: black;
+}
+
+.colorfour {
+    background-color: #FE4D4D;
+}
+
+.namecircle {
+    
+}
+
+/* Exercise two begins here */
+
+.container {
+    width: 600px;
+    border: 1px solid;
+    margin: 0 auto;
+    /* box-sizing: border-box; DO NOT PUT BORDER BOX ON CONTAINER */ 
+}
+
+.box {
+    background: lightgray;
+    width: 180px;
+    height: 100px;
+    display: inline-block;
+    margin: 5px 5px;
+
+}
+
+.margin {
+    margin: 5px 5px;
+}
+.border {
+    border: 1px solid;
+
+}
+
+.boxsizing {
+    box-sizing: border-box;
+}
+
+/* DO NOT PUT BORDER BOX ON INDIVIDUAL BOXES
+1px border should make the width exceed the container
+ width forcing the third box to move down. */
+
+
