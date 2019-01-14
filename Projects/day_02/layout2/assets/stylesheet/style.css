@@ -54,56 +54,60 @@ table {
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
-    padding-top: 10px;
-    padding-left: 8px;    
+    margin: 10px;
+    padding: 10px;
+}
+
+.bigbox {
+    width: 400px;
+    height: 200px;
+    display: inline-block;
 }
 
 body {
     color: white;
     font-size: 17px;
+    margin: 0 auto;
+}
+/* Wrapper made to assign margin */
+.wrapper {
+    width: 860px;
+    margin: 0 auto;
 }
 
 /* color styling the individual boxes */
-.a1, .a2 {
+.box1 {
     background-color: #FE4D4D;
 }
 
-.a3 {
+.box2 {
     background-color: #028910;
 }
 
-.a4 {
+.box3 {
     background-color: #BB32FF;
 }
 
-.b1 {
+.box4 {
     background-color: #58CCED;
 }
 
-.b2, .b3 {
+.box5 {
     background-color: #3CEC97;
 }
 
-.b4 {
+.box6 {
     background-color: #B1F258;
 }
 
-.c1 {
+.box7 {
     background-color: #FFFF66;
 }
 
-.c2 {
+.box8 {
     background-color: #FD6A02;
 }
 
-.c3, .c4 {
+.box9 {
     background-color: red;
-}
-/* inserts margin from left */
-.a3, .a4, .b2, .b4, .c2, .c3 {
-    margin-left: 10px;
-}
-/* inserts margin between rows */
-.row2, .row3 {
-    margin-top: 10px;
 }
