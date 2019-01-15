@@ -1,0 +1,124 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Making the box */
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    padding-top: 5px;
+}
+
+.bigbox {
+    width: 400px;
+    height: 200px;
+}
+
+body {
+    color: white;
+    font-size: 17px;
+    margin: 0 auto;
+}
+/* Wrapper made to assign margin. Hence width defined. */
+.wrapper {
+    margin: 0 auto;
+    width: 860px;
+}
+
+/* color styling the individual boxes */
+.box1 {
+    background-color: #FE4D4D;
+}
+
+.box2 {
+    background-color: #028910;
+}
+
+.box3 {
+    background-color: #BB32FF;
+}
+
+.box4 {
+    background-color: #58CCED;
+}
+
+.box5 {
+    background-color: #3CEC97;
+}
+
+.box6 {
+    background-color: #B1F258;
+}
+
+.box7 {
+    background-color: #FFFF66;
+}
+
+.box8 {
+    background-color: #FD6A02;
+}
+
+.box9 {
+    background-color: red;
+}
+
+.row1:before, .row1:after, .row2:before, .row2:after, .row3:before, .row3:after {
+    content: "";
+    display: table;
+  }
+  
+  .row1:after, .row2:after, .row3:after {
+    clear: both;
+  }
+  
+  .row1, .row2, .row3 {
+    *zoom: 1;
+  }
+  
