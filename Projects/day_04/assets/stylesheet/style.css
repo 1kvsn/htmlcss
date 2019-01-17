@@ -1,0 +1,159 @@
+/* CSS Resets */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main CSS */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+}
+
+.cog h1 {
+    font-size: 60px;
+    padding-bottom: 60px;
+    padding-top: 10px;
+    
+}
+
+.cog a {
+    text-decoration: none;
+    padding
+}
+
+nav a {
+    padding: 20px 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+/* Hero section */
+
+.header-wrapper {
+    background-color: #2056ac;
+    color: white;
+    text-align: center;
+}
+
+.nav-bar {
+    color: white;
+    padding: 25px;
+}
+.wrapper {
+    text-align: center;
+    padding: 80px 0;
+    padding-bottom: 30px;
+}
+
+.cog {
+    padding-top: 140px;
+}
+
+i {
+    font-size: 60px;
+}
+
+
+/* section two */
+.wrapper h2 {
+    font-size: 50px;
+    font-weight: 600; 
+}
+
+.padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.wrapper p {
+    padding-left: 400px;
+    padding-right: 400px;
+    line-height: 1.5;
+}
+
+/* Section three */
+.container-bigbox:before, .container-bigbox:after {
+    content: "";
+    display: table;
+}
+.container-bigbox:after {
+    clear: both;
+}
+.container-bigbox {
+    *zoom: 1;
+}
+
+.centering-box {
+    margin-left: 350px;
+}
+.bigbox {
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+.bigbox h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: #64ABD1;
+    padding: 20px 30px;
+}
+
+.button a {
+    text-decoration: none;
+}
