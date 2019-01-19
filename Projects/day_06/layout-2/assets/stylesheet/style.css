@@ -1,0 +1,125 @@
+/* CSS Resets */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, li, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main CSS */
+
+.super {
+	background-image: url("../media/bg2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parent h1 {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+}
+
+.box {
+	width: 350px;
+	height: 250px;
+	background: #FF0248;
+	display: inline-block;
+	margin-left: 40px;
+	position: relative;
+	border-radius: 10px;
+}
+
+/* Applying gradients to boxes */
+
+.gradient-1 {
+	background: linear-gradient(to right, rgb(54, 52, 52) 1%, #FF0248)
+}
+
+.gradient-2 {
+	background: radial-gradient(#FF0248, rgb(54, 52, 52))
+}
+
+/* Inserting text on boxes */
+
+.container{
+	margin: 0 auto;
+	text-align: center;
+	max-height: 1400px;
+	height: 100%;
+}
+
+.container p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Second section */
+
+.container, .parent-bigbox {
+	margin-top: 80px;
+}
+
+.bigbox {
+	width: 1400px;
+	height: 400px;
+	background-image: url("../media/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	margin: 0 auto;
+	position: relative;
+	background: linear-gradient(rgba(139, 50, 75, 0.151))
+}
+
+.parent-bigbox {
+	padding-bottom: 60px;
+}
+
+.parent-bigbox p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Container made relative and text para absolute
+ so we can position it above and middle of the box. */

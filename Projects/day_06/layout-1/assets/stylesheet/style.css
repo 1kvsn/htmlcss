@@ -1,0 +1,163 @@
+/* CSS Resets */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, li, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ClearFix */
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/* Main CSS */
+
+h1, h2 {
+	font-size: 32px;
+}
+body {
+	background: #D4CEA7;
+	width: 100%;
+}
+
+/* Custom Styles begin here */
+
+.header {
+		background: #F96115;
+}
+
+.header li {
+    display: inline-block;
+    margin: 20px 20px;
+    font-weight: 32px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Section Two begins here */
+section ol li {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.col-1, .col-2, .col-3 {
+	width: 230px;
+	height: 330px;
+	background: #005979;
+	padding: 20px 10px;
+	float: left;
+	margin: 30px 30px;
+	color: #D4CEA7;
+	box-shadow: 5px 10px 5px black;
+}
+
+.col-1 {
+	margin-left: 200px;
+}
+
+.col-2 ul {
+	list-style-type: disc;
+	margin: 10px 10px;
+}
+
+.col-2 ul li {
+	margin: 10px;
+}
+
+.col-3 ul {
+	list-style-type: none;
+}
+
+.fas {
+	margin: 10px 10px;
+	color: black;
+}
+
+.set {
+	margin-left: 10px;
+}
+
+.container {
+ background: #D4CEA7;
+}
+
+/* Para Arrangement */
+
+.text-set {
+	margin-left: 200px;
+}
+.text-container p {
+	margin: 10px 200px;
+}
+
+.text-container h1, h2 {
+	margin: 5px 150px;
+}
+
+/* Footer section */
+
+.footer {
+	background: #252C22;
+	margin-top: 50px;
+}
+
+.footer li {
+	display: inline-block;
+	margin: 20px 20px;
+	font-weight: 32px;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav {
+	margin-left: 200px;
+}
