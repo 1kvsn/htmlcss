@@ -47,11 +47,7 @@ table {
   border-spacing: 0;
 }
 
-/*
-  ========================================
-  Custom styles
-  ========================================
-*/
+/*   Custom styles   */
 
 body {
   background: #293f50;
@@ -59,11 +55,7 @@ body {
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/*
-  ========================================
-  Grid
-  ========================================
-*/
+/*   Grid   */
 
 *,
 *:before,
@@ -185,7 +177,6 @@ em {
   Leads
   ========================================
 */
-
 .lead {
   text-align: center;
 }
@@ -199,7 +190,6 @@ em {
   Links
   ========================================
 */
-
 a {
   color: #648880;
   text-decoration: none;
@@ -224,7 +214,6 @@ p a {
   Buttons
   ========================================
 */
-
 .btn {
   border-radius: 5px;
   color: #fff;
@@ -249,7 +238,6 @@ p a {
   Primary header
   ========================================
 */
-
 .logo {
   border-top: 4px solid #648880;
   float: left;
@@ -271,11 +259,7 @@ p a {
   text-transform: uppercase;
 }
 
-/*
-  ========================================
-  Primary footer
-  ========================================
-*/
+/*  Primary footer*/
 
 .primary-footer {
   color: #648880;
@@ -287,23 +271,19 @@ p a {
   float: left;
   font-weight: 400;
 }
-
 /*
   ========================================
   Navigation
   ========================================
 */
-
 .nav {
   text-align: right;
 }
-
 /*
   ========================================
   Home
   ========================================
 */
-
 .hero {
   color: #fff;
   line-height: 44px;

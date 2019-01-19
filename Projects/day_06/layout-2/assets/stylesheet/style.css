@@ -47,6 +47,7 @@ table {
 	background-image: url("../media/bg2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .parent h1 {
@@ -102,12 +103,12 @@ table {
 .bigbox {
 	width: 1400px;
 	height: 400px;
-	background-image: url("../media/bg.jpg");
+	background: linear-gradient(to right bottom, rgba(209, 192, 197, 0.6), rgba(218, 5, 65, 0.9)), url("../media/bg.jpg");
 	background-repeat: no-repeat;
 	background-size: auto;
 	margin: 0 auto;
 	position: relative;
-	background: linear-gradient(rgba(139, 50, 75, 0.151))
+	
 }
 
 .parent-bigbox {
