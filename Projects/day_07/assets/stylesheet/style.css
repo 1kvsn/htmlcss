@@ -1,0 +1,264 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Styles begin here */
+
+/* =====================
+			Main CSS 
+=========================*/
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/* ClearFix defined */
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* =====================
+		Header section 
+=========================*/
+
+.hero {
+	background-image: url(./../media/mountain.jpg);
+	height: 100vh;
+}
+
+nav {
+	max-width: 2000px;
+	width: 100%;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+	margin: 20px;
+}
+
+li a {
+	text-decoration: none;
+	font-size: 32px;
+	color: black;
+}
+
+.hero p {
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 250px;
+}
+
+/* =====================
+		Second section 
+=========================*/
+
+.super-2 {
+	background-color: #DADADA;
+}
+
+.wrapper-2 {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* svg image sizing */
+.wrapper-2 img {
+	width: 250px;
+	height: 300px;
+}
+
+.rule {
+	background: lightgreen;
+	height: 10px;
+	padding: 10px;
+	margin: 0;
+}
+
+/* =======================
+2nd section Column styles 
+===========================*/
+
+.col-2 {
+	width: 380px;
+	height: 550px;
+	padding: 10px;
+	text-align: center;
+	float: left;
+}
+
+.col-2 audio {
+	margin-top: 120px;
+}
+
+.col-2 video {
+	margin-top: 100px;
+}
+
+/* Column paragraph arrange */
+
+.para-1 {
+	margin-top: 20px;
+	font-size: 18px;
+	padding: 30px;
+}
+
+.para-2 {
+	margin-top: 145px;
+	font-size: 18px;
+	padding: 30px;
+}
+
+.para-3 {
+	margin-top: 110px;
+	font-size: 18px;
+	padding: 30px;
+}
+
+/* ===================
+		Section 3
+====================== */
+
+.super-3 {
+	background-color: lightsalmon;
+}
+
+.wrapper-3 {
+	max-width: 1800px;
+	width: 100%;
+	text-align: center;
+}
+
+.wrapper-3 h1 {
+	font-size: 48px;
+	font-weight: bold;
+	color: white;
+}
+
+.wrapper-3 p {
+	font-size: 18px;
+	margin: 40px 140px;
+}
+
+.wrapper-3 iframe {
+	border: 40px solid lightcyan;
+	margin: 50px 0;
+} 
+/* ===================
+		Section 4
+====================== */
+
+.super-4 {
+	max-width: 2000px;
+	width: 100%;
+	background: lightgray;
+	margin: 0 auto;
+	padding: 60px;
+}
+
+.wrapper-4 {
+	width: 1200px;
+	height: 800px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0px 0px 51px rgba(0, 0, 0, 0.99);
+}
+
+.form-header {
+	font-size: 24px;
+}
+
+/* Input box arrangement */
+.name, .email {
+	width: 475px;
+	height: 50px;
+	margin: 30px;
+}
+
+.name {
+	margin-right: 20px;
+}
+
+.subject {
+	width: 1000px;
+	height: 50px;
+	margin-bottom: 30px;
+}
+
+.textarea {
+	width: 1000px;
+	height: 400px;
+}
+
+.button {
+	width: 250px;
+	height: 60px;
+	background-color: green;
+	color: white;
+	margin-top: 20px;
+}
+
+/* ================
+		Map Section 
+===================*/
+.map {
+	max-width: 2000px;
+	width: 100%;
+	background: brown;
+	text-align: center;
+	padding: 50px;
+}
