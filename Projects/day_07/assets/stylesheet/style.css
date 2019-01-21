@@ -77,8 +77,6 @@ table {
 }
 
 nav {
-	max-width: 2000px;
-	width: 100%;
 	text-align: center;
 }
 
@@ -97,8 +95,18 @@ li a {
 	font-size: 48px;
 	font-weight: bold;
 	text-align: center;
-	margin-top: 250px;
+	position: relative;
+	top: 300px;
 }
+
+/* Ruler */
+.rule {
+	background: lightgreen;
+	height: 10px;
+	padding: 10px;
+	margin: 0;
+}
+
 
 /* =====================
 		Second section 
@@ -114,24 +122,11 @@ li a {
 	margin: 0 auto;
 }
 
-/* svg image sizing */
-.wrapper-2 img {
-	width: 250px;
-	height: 300px;
-}
-
-.rule {
-	background: lightgreen;
-	height: 10px;
-	padding: 10px;
-	margin: 0;
-}
-
-/* =======================
+/* ==============
 2nd section Column styles 
-===========================*/
+=================*/
 
-.col-2 {
+.col {
 	width: 380px;
 	height: 550px;
 	padding: 10px;
@@ -139,33 +134,35 @@ li a {
 	float: left;
 }
 
-.col-2 audio {
-	margin-top: 120px;
+.upper-portion {
+	width: 350px;
+	height: 300px;
 }
 
-.col-2 video {
-	margin-top: 100px;
+/* svg image sizing */
+.wrapper-2 img {
+	width: 250px;
+	height: 300px;
 }
 
 /* Column paragraph arrange */
 
-.para-1 {
-	margin-top: 20px;
+.para {
 	font-size: 18px;
 	padding: 30px;
+	line-height: 1.5;
 }
 
-.para-2 {
-	margin-top: 145px;
-	font-size: 18px;
-	padding: 30px;
+.col audio {
+	position: relative;
+	top: 130px;
 }
 
-.para-3 {
-	margin-top: 110px;
-	font-size: 18px;
-	padding: 30px;
+.col video {
+	position: relative;
+	top: 100px;
 }
+
 
 /* ===================
 		Section 3
@@ -176,9 +173,11 @@ li a {
 }
 
 .wrapper-3 {
-	max-width: 1800px;
+	max-width: 1200px;
 	width: 100%;
 	text-align: center;
+	padding: 50px 0;
+	margin: 0 auto;
 }
 
 .wrapper-3 h1 {
@@ -189,7 +188,8 @@ li a {
 
 .wrapper-3 p {
 	font-size: 18px;
-	margin: 40px 140px;
+	padding: 20px;
+	line-height: 1.5;
 }
 
 .wrapper-3 iframe {
@@ -201,16 +201,13 @@ li a {
 ====================== */
 
 .super-4 {
-	max-width: 2000px;
-	width: 100%;
 	background: lightgray;
-	margin: 0 auto;
-	padding: 60px;
+	padding: 40px 0;
 }
 
 .wrapper-4 {
-	width: 1200px;
-	height: 800px;
+	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	background-color: white;
@@ -227,6 +224,7 @@ li a {
 	width: 475px;
 	height: 50px;
 	margin: 30px;
+	padding: 15px;
 }
 
 .name {
@@ -237,11 +235,13 @@ li a {
 	width: 1000px;
 	height: 50px;
 	margin-bottom: 30px;
+	padding: 15px;
 }
 
 .textarea {
 	width: 1000px;
 	height: 400px;
+	padding: 15px;
 }
 
 .button {
@@ -250,14 +250,15 @@ li a {
 	background-color: green;
 	color: white;
 	margin-top: 20px;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 5px;
 }
 
 /* ================
 		Map Section 
 ===================*/
 .map {
-	max-width: 2000px;
-	width: 100%;
 	background: brown;
 	text-align: center;
 	padding: 50px;
