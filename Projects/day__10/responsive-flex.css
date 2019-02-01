@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+	.container-image-hero img {
+		object-fit: cover;
+		height: 100%;
+	}
+	.hero, .container-grid {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	iframe {
+		width: 100%;
+	}
+}
+/* For Tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.container-image-hero img {
+		object-fit: cover;
+		height: 100%;
+	}
+	.hero, .container-grid {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	iframe {
+		width: 100%;
+	}
+}

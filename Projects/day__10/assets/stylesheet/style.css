@@ -1,0 +1,491 @@
+/* CSS Resets */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Main CSS */
+:root {
+	--bg-primary: #FFFFFF;
+	--bg-secondary: #ECAF4E;
+	--bg-tertiary: #FC683E;
+	--color-primary: #4cabb1;
+	--color-secondary: #69c7ad;
+	--color-tertiary: #fed586;
+	--font: 'Raleway', sans-serif;
+	--text-color: #434b56;
+	--heading-color: #fff;
+	font-size: 16px;
+}
+body {
+	font-family: var(--font);
+	line-height: 1.5;
+	color: var(--text-color);
+}
+
+
+/********** Base CSS *************/
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+button {
+	border: 0;
+	cursor: pointer;
+}
+button:focus {
+	outline: 0;
+}
+input {
+	border: 0;
+	margin: 0;
+}
+input:focus {
+	outline: 0;
+}
+/** Heading Elements **/
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+}
+h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+h3 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+h4 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+h5 {
+	font-size: 1rem;
+	font-weight: 700;
+}
+h6 {
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.img-responsive {
+	width: 100%;
+}
+/** clearfix **/
+.clearfix:before, .clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/* General */
+.wrapper {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+.padding {
+	padding: 60px 25px;
+}
+.heading {
+	color: var(--heading-color);
+	font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+}
+
+.heading-secondary {
+	color: var(--text-color);
+}
+.sub-heading {
+	font-weight: 400;
+	color: #b6babf;
+}
+
+/* ======== Header Section ======== */
+.container-header {
+	background: #F5E3D7;
+	z-index: 1;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+.nav-bar {
+	display: flex;
+	margin: 20px;
+}
+.nav-bar li {
+	margin: 10px;
+}
+.nav-bar a {
+	color: grey;
+}
+.logo a {
+	color: rgb(71, 69, 69);
+}
+
+/* ======== Hero Section =========== */
+.hero {
+	display: grid;
+	/* grid-template-columns: repeat(2, 1fr); */
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	background: #F5E3D7;
+}
+.hero-item {
+	grid-column: 2 / 3;
+	padding: 120px 20px;
+}
+.hero-item h2 {
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px;
+}
+.hero-item h3 {
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 1.5;
+	color: var(--text-color);
+}
+.button {
+	padding: 10px 30px;
+	border-radius: 20px 20px;
+	border: 3px solid;
+	background: #F5E3D7;
+	color: black;
+	font-weight: bold;
+	margin-top: 30px;
+}
+strong {
+	font-weight: bold;
+}
+/*========= Row - 2 Styles ========*/
+
+.container-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-areas: 
+		"one two three four"
+}
+.item-21 {
+	grid-column: 1 / 3;
+	grid-area: one;
+	padding: 40px;
+}
+.item-22 {
+	grid-area: three;
+}
+.item-23 {
+	padding: 40px;
+	background-color: #ECAF4E;
+	color: white;
+	grid-area: four;
+}
+/* Row - 2 Column 3 progress bars */
+.progress-container {
+	background-color: lightgray;
+	width: 100%;
+}
+.progress-bar {
+	background-color: black;
+}
+
+/*========= Row - 3 Styles =========*/
+
+.item-31 {
+	background-color: #ECAF4E;
+	color: white;
+}
+.item-32 {
+	background-color: #FC683E;
+	color: white;
+}
+.item-33 {
+	background-color: black;
+	color: white;
+}
+.item-3 h4, .item-3 p {
+	padding: 20px;
+}
+.item-3 i {
+	font-size: 35px;
+}
+
+/*========= Row - 4 Styles =========*/
+.item-41 {
+	grid-column: 1 / 3;
+	grid-area: one;
+}
+.item-42 {
+	grid-column: 3 / 5;
+	background-color: #FC683E;
+	color: white;
+	grid-area: three;
+}
+.item-4 h3 {
+	font-weight: normal;
+	padding: 20px;
+}
+.item-4 p {
+	padding: 20px;
+}
+.item-4 i {
+	font-size: 32px;
+}
+.designer-text ul {
+	display: inline-block;
+	padding: 20px;
+}
+.designer-text li {
+	padding-top: 10px;
+}
+
+/*======== Row - 5 Styles =========*/
+.item-51 {
+	grid-column: 1 / 3;
+	background-color: #ECAF4E;
+	color: white;
+	grid-area: one;
+}
+.item-52 {
+	grid-column: 3 / 5;
+	grid-area: three
+}
+.item-5 h3 {
+	font-weight: normal;
+	padding: 20px;
+}
+.item-5 p {
+	padding: 20px;
+}
+.item-5 i {
+	font-size: 32px;
+}
+
+hero-item h3 {
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 1.5;
+	color: var(--text-color);
+}
+.button {
+	padding: 10px 30px;
+	border-radius: 20px 20px;
+	border: 3px solid;
+	background: #F5E3D7;
+	color: black;
+
+/*======== Row - 6 Styles ========*/
+.item-61 {
+	grid-column: 1 / 3;
+	background-color: #FC683E;
+	color: white;
+	grid-area: one;
+}
+.item-62 {
+	grid-area: three;
+}
+.text-area {
+	outline: none;
+	border: none;
+}
+.form-fields {
+	display: block;
+	width: 25rem;
+	padding: 0.625rem 0;
+	margin: 1.25rem 1.875rem;
+	border-bottom: 1px solid #ECAF4E;
+	background-color: #FC683E;
+}
+.container-button button {
+	background: white;
+	border-radius: 20px 20px;
+	padding: 10px 100px;
+	border: none;
+}
+
+.item-63 {
+	background-color: black;
+	color: white;
+	grid-area: four;
+}
+.contact-address h4 {
+	font-weight: normal;
+}
+.contact-address-text {
+	margin: 20px 0;
+}
+.contact-address ul {
+	display: inline-block;
+	padding: 10px;
+}
+.contact-address-second-header {
+	margin-top: 40px;
+}
+
+/*======== Row - 7 Styles ==========*/
+
+.item-71 {
+	grid-column: 1 / 5;
+	background-color: #FC683E;
+	text-align: center;
+	padding: 20px;
+	grid-area: one;
+}
+ /*======= Row - 8 Styles ==========*/
+ .copyright {
+	background-color: #e8e9eb;
+	padding-top: 80px;
+	display: flex;
+	justify-content: center;
+ }
+.footer-container {
+	background-color: #e8e9eb;
+	padding-bottom: 80px;
+}
+.social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.social a {
+	padding: 20px;
+	color: black;
+}
+
+/*========== Hamburger Menu Styles  ==========*/
+#page-nav label, #page-nav ul, #page-nav li {
+  display: inline-block;
+}
+
+/* [HAMBURGER - HIDDEN ON BIG SCREENS] */
+#page-nav label, #hamburger {
+  display: none;
+}
+#page-nav label {
+  color: #fff;
+  background: #a02620;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+/* [MENU ITEMS] */
+#page-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+#page-nav ul li {
+  padding: 10px;
+}
+#page-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Hamburger menu ends here */
+
+/*============= Responsive Design ===============*/
+/* For Mobiles */
+@media screen and (max-width: 768px) {
+	 /* Show Hamburger in mobile width */
+	 #page-nav label {
+    display: inline-block;
+  }
+
+  /* [BREAK DOWN MENU INTO VERTICAL] */
+  #page-nav ul li {
+    display: block;
+  }
+  #page-nav ul li {
+    border-top: 1px solid #333;
+	}
+	
+  /* [SHOW/HIDE MENU ON CHECKBOX CLICK] */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+	}
+	/* Grid Styles */
+	.container-grid {
+		display: grid;
+		grid-template-areas: 
+		"one"
+		"three"
+		"four"
+	}
+	.container-grid iframe {
+		width: 100%;
+	}
+}
